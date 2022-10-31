@@ -1,4 +1,4 @@
-# <center><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/> Learn Bootstrap</center> #
+# <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/> Learn Bootstrap #
 
 ### 👨‍💻 This is a mini project to revamp the [Unicurd](http://www.unicurd.com.sg) with **Bootstrap** ###
 ### Project URL: [Unicurd Bootstrap](https://nicholas5538.github.io/learn-bootstrap/) ###
