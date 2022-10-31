@@ -290,9 +290,9 @@ footer img {
     border-radius: 1em;
 }
 
-.productBox:hover {
-    scale: 1.05;
-    transition: .3s linear;
+.productBox:hover img {
+    opacity: .5;
+    transition: .2s linear;
 }
 
 .productBox img {
