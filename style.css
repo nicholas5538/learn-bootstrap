@@ -1,0 +1,495 @@
+:root {
+    --darkred: hsl(354, 57%, 52%);
+    --lightred: hsl(354, 70%, 54%);
+    --white: #e8e8e8;
+    --lesswhite: #f8f8f8;
+    --offwhite: hsl(0, 0%, 86%);
+    --black: hsl(0, 0, 10%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+html,
+body,
+.navbar,
+section,
+footer {
+    background-color: hsl(0, 0%, 20%);
+}
+
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--offwhite);
+}
+
+a.nav-link {
+    color: var(--offwhite);
+}
+
+.nav-item a {
+    letter-spacing: .1em;
+}
+
+h1 {
+    font-size: 3rem !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color: var(--white) !important;
+    letter-spacing: .1em !important; 
+}
+
+h1 span {
+    font-size: 3rem;
+    color: hsl(348, 78%, 51%);
+    font-style: italic;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1875em;
+}
+
+.nested p {
+    font-size: 1.1875rem;
+    color: var(--white);
+    letter-spacing: 0.025em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem !important;
+}
+
+.btn.btn-danger a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--lesswhite);
+}
+
+footer p,
+footer a {
+    font-weight: 400;
+    color: var(--offwhite);
+}
+
+.year,
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--lesswhite);
+}
+
+#tofuRange a {
+    color: var(--offwhite);
+    font-size: 1.1875rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+
+#products a {
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+.productBox p {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Layout */
+.container {
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    max-width: 14%;
+    min-width: 80px;
+    height: 40px;
+    max-height: 50px;
+    background: url(images/logo.JPG) no-repeat center center/cover;
+}
+
+button.navbar-toggler {
+    background-color: var(--darkred);
+    border: none;
+}
+
+section.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-12:first-child {
+    margin-top: .625em;
+}
+
+.nested p {
+    width: 50%;
+    margin: 0 auto;
+    padding: .5em 0;
+}
+
+main {
+    background-color: var(--lesswhite);
+}
+
+.btn.btn-danger {
+    border: none;
+    border-radius: 1.8em;
+    background-color: var(--lightred);
+    width: 270px;
+}
+
+.btn-btn-danger:hover {
+    background-color: var(--darkred);
+    box-shadow: 0 0 .5em var(--darkred);
+    transition: all 0.5s;
+}
+
+.year,
+.title {
+    margin: 0 auto;
+    border: none;
+    background-color: var(--lightred);
+    width: 85%;
+    max-width: 200px;
+    box-shadow: 0 0 .5em var(--lightred);
+}
+
+
+/* navbar collapse */
+#navbarNavDropdown {
+    background-color: hsl(0, 0%, 35%);
+}
+
+.navbar-nav > li {
+    position: relative;
+    padding-left: 1em;
+}
+
+ul.dropdown-menu.show {
+    position: absolute;
+    left: 0;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: .5em;
+    padding: 0;
+    margin-top: .125em;
+    border: none;
+}
+
+ul.dropdown-menu.show > li {
+    padding: .4em 0;
+}
+
+ul.dropdown-menu.show > li:not(li:last-of-type),
+.navbar-nav > li:not(li:last-child) {
+    border-bottom: .125em solid hsl(0, 0%, 20%);
+}
+
+ul.dropdown-menu.show > li:hover {
+    background-color: hsl(0, 0%, 90%);
+    transition: background-color 0.5s;
+}
+
+ul.dropdown-menu.show li a:hover {
+    background: none;
+}
+
+ul.navbar-nav .nav-item:hover,
+ul.navbar-nav .nav-item:active {
+    background-color: hsl(0, 0%, 70%);
+    transition: background-color .5s;
+}
+
+.nav-item:first-child:hover,
+.nav-item:first-child:active,
+ul.dropdown-menu.show li:first-child {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.nav-item:last-child:hover,
+.nav-item:last-child:active,
+ul.dropdown-menu.show li:last-child {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+/* Carousel */
+#carouselExampleIndicators {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 1.875em;
+}
+
+/* Footer */
+footer img {
+    max-width: 70px;
+    max-height: 30px;
+}
+
+#footer-links a {
+    text-decoration: none;
+}
+
+#footer-links a:not(#footer-links a:last-of-type) {
+    padding-right: .75em;
+}
+
+#footer-links a:not(#footer-links a:last-child) {
+    border-right: .0625em solid hsl(0, 0%, 50%);
+    margin-right: .75em;
+}
+
+#footer-links a:hover {
+    color: hsl(0, 0%, 90%);
+    text-decoration: underline;
+}
+
+/* Product */
+#tofuRange a {
+    margin-bottom: 1em;
+}
+
+#tofuRange a:hover,
+#tofuRange a:active {
+    color: var(--lightred);
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.productBox {
+    width: 47.5%;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 1em;
+}
+
+.productBox:hover {
+    scale: 1.05;
+    transition: .3s linear;
+}
+
+.productBox img {
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.productBox p {
+    height: 15%;
+    padding: .25em;
+    background-color:hsl(0, 0%, 27%);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+/* Media queries */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .container {
+        max-width: 95% !important;
+    }
+
+    #picture img {
+        max-height: 200px !important;
+    }
+
+    .mainContainer p {
+        margin-top: 2em;
+    }
+
+    .productBox {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    #picture img {
+        max-height: 300px !important;
+    }
+
+    /* navbar */
+    .navContainer {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    #navbarNavDropdown {
+        background: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .nav-item a {
+        font-size: .875rem;
+        padding: .5em;
+    }
+
+    .nav-item:hover,
+    .nav-item:active {
+        border-radius: .5em;
+        background-color: hsl(0, 0%, 50%);
+        transition: background-color .5s;
+    }
+
+    .navbar-nav > li {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    h1, 
+    span {
+        letter-spacing: .03em !important;
+    }
+
+    .col-12:first-child {
+        margin-top: 0;
+    }
+
+    .nested p {
+        width: 100%;
+        max-width: 490px;
+        margin: 0;
+    }
+
+    .year {
+        width: 40%;
+    }
+
+    /* Carousel */
+    #picture {
+        padding: 0;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Product */
+    #tofuRange a {
+        padding: 1em;
+        border-radius: 1em;
+        border: 2px solid hsl(0, 0%, 90%);
+    }
+
+    #tofuRange a:hover,
+    #tofuRange a:active {
+        text-decoration: none;
+        background-color: var(--darkred);
+        color: var(--white);
+        transition: all .3s;
+    }
+
+    .productBox p {
+        font-size: 1.1875rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    #picture img {
+        max-height: 450px !important;
+    }
+    
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link > * {
+        text-align: start;
+    }
+
+    #tofuRange a {
+        font-size: 1.25rem;
+    }
+
+    .productBox p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 1300px !important;
+    }
+
+    #tofuRange a {
+        font-size: 1.5rem;
+    }
+
+    .productBox p {
+        font-size: 1.55rem;
+    }
+}
