@@ -313,7 +313,7 @@ footer img {
 /* Media queries */
 @media only screen and (max-width: 576px) {
     .container {
-        max-width: 95% !important;
+        width: 95% !important;
     }
 
     #picture img {
@@ -344,10 +344,6 @@ footer img {
 @media only screen and (min-width: 768px) {
     body {
         font-size: 18px;
-    }
-
-    .container {
-        max-width: 95% !important;
     }
 
     #picture img {
