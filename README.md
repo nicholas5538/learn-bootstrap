@@ -28,3 +28,8 @@
 1. Bootstrap
 2. Colour theory
 3. Always have a mobile first design strategy mindset
+4. Media Queries
+5. Absolute & Relative Units (%, rem, em)
+6. HTML Semantic Elements
+7. Flexbox
+8. More CSS properties & Pseudo-classes
