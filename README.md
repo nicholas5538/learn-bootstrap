@@ -11,9 +11,9 @@
 <br>
 
 ### 🌐 Project URLs: 
-* [Unicurd - Home](https://nicholas5538.github.io/learn-bootstrap/index.html)
-* [Unicurd - About Us](https://nicholas5538.github.io/learn-bootstrap/about-us.html)
-* [Unicurd - Products](https://nicholas5538.github.io/learn-bootstrap/product.html)
+* [Unicurd - Home](https://unicurd-bootstrap.netlify.app)
+* [Unicurd - About Us](https://unicurd-bootstrap.netlify.app/about-us.html)
+* [Unicurd - Products](https://unicurd-bootstrap.netlify.app/product.html)
 
 ### 🥅 Objective & Purpose
 1. Using [Unicurd](http://www.unicurd.com.sg) as an example as the webpages are **_not responsive_** and **_not aesthetically modern_**
